@@ -102,6 +102,15 @@ async function loadJob(id) {
     const dir = join(dataDir, id);
     const value = JSON.parse(await readFile(join(dir, 'job-state.json'), 'utf8'));
     const job = { ...value, dir };
+    if (job.state === 'running') {
+      Object.assign(job, {
+        state: 'failed',
+        phase: '上次任务未完成',
+        message: '检测到上次运行时中断的任务；可重新提交或清除本机历史。',
+        error: '上次程序退出时任务中断，未自动续转。'
+      });
+      await persistJob(job);
+    }
     jobs.set(id, job);
     return job;
   } catch (_) { return null; }

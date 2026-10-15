@@ -258,7 +258,7 @@
         $('#error').classList.add('show');
       } finally { button.disabled = false; }
     });
-    document.querySelectorAll('.download').forEach((button) => button.addEventListener('click', async () => {
+    document.querySelectorAll('.download[data-format]').forEach((button) => button.addEventListener('click', async () => {
       if (!currentJobId) return;
       button.disabled = true;
       try {

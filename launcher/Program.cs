@@ -24,7 +24,7 @@ internal sealed class LauncherForm : Form
 {
     private const string AppUrl = "http://127.0.0.1:18437";
     private const string ResourceRoot = "BiliSpeechLauncher.";
-    private const string PayloadVersion = "1.2.0";
+    private const string PayloadVersion = "1.2.1";
     private static readonly string LocalRoot = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
         "BiliSpeechToDocument");

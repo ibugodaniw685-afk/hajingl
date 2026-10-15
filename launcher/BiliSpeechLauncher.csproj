@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>转成文</AssemblyName>
     <RootNamespace>BiliSpeechLauncher</RootNamespace>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
