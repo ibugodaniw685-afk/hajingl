@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>转成文</AssemblyName>
+    <RootNamespace>BiliSpeechLauncher</RootNamespace>
+    <Version>1.2.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="payload\app.zip" LogicalName="BiliSpeechLauncher.app.zip" Condition="Exists('payload\app.zip')" />
+    <EmbeddedResource Include="payload\node.exe" LogicalName="BiliSpeechLauncher.node.exe" Condition="Exists('payload\node.exe')" />
+  </ItemGroup>
+</Project>

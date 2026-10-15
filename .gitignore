@@ -1,0 +1,21 @@
+# Generated task data and model cache
+app/data/
+app/exports/
+app/models/
+app/tools/*
+!app/tools/README.md
+
+# Generated payloads and builds
+build/
+launcher/bin/
+launcher/obj/
+launcher/publish/
+launcher/payload/app.zip
+launcher/payload/node.exe
+
+# Local machine configuration and logs
+cuda-path.txt
+.env
+*.log
+*.part
+*.download-*

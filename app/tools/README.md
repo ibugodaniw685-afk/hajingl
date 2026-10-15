@@ -1,0 +1,1 @@
+运行时二进制不随源码公开。请按根目录 README 的目录结构，将 yt-dlp 和 whisper.cpp Windows 文件放在此目录下，再运行 EXE 构建脚本。
